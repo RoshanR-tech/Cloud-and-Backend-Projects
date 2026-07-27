@@ -2,36 +2,38 @@
 
 A cloud-ready AI image classification web application built using **FastAPI**, **TensorFlow**, and **MobileNetV2**.
 
-Users can upload an image through a modern web interface, and the application predicts the **Top 5 ImageNet classes** with confidence scores.
+Users can upload an image through a modern web interface, and the application predicts the **Top 5 ImageNet classes** along with confidence scores.
 
 ---
 
-## 📸 Demo
+# 📸 Demo
 
-### Home Page
+## 🏠 Home Page
 
-(Add screenshot here)
-
-### Prediction Result
-
-(Add screenshot here)
+![Home Page](assets/home-page.png)
 
 ---
 
-## 🚀 Features
+## 🔍 Prediction Result
+
+![Prediction Result](assets/prediction-result.png)
+
+---
+
+# 🚀 Features
 
 - Upload any image
 - AI-powered image classification
-- Top 5 predictions
+- Top 5 ImageNet predictions
 - Confidence percentage bars
 - Modern responsive UI
 - FastAPI backend
-- TensorFlow MobileNetV2
+- TensorFlow MobileNetV2 model
 - Clean project structure
 
 ---
 
-## 🛠 Tech Stack
+# 🛠 Tech Stack
 
 - Python
 - FastAPI
@@ -39,13 +41,12 @@ Users can upload an image through a modern web interface, and the application pr
 - MobileNetV2
 - HTML
 - CSS
-- Jinja2
-- Pillow
-- NumPy
+- Jinja2 Templates
+- Uvicorn
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```
 01-Cloud-Image-Processing-Pipeline
@@ -61,6 +62,10 @@ Users can upload an image through a modern web interface, and the application pr
 │
 ├── uploads
 │
+├── assets
+│   ├── home-page.png
+│   └── prediction-result.png
+│
 ├── requirements.txt
 ├── README.md
 └── .gitignore
@@ -68,7 +73,7 @@ Users can upload an image through a modern web interface, and the application pr
 
 ---
 
-## ⚙ Installation
+# ⚙️ Installation
 
 Clone the repository
 
@@ -76,7 +81,7 @@ Clone the repository
 git clone https://github.com/RoshanR-tech/Cloud-and-Backend-Projects.git
 ```
 
-Go into the project
+Go to the project folder
 
 ```bash
 cd Cloud-and-Backend-Projects/01-Cloud-Image-Processing-Pipeline
@@ -85,18 +90,18 @@ cd Cloud-and-Backend-Projects/01-Cloud-Image-Processing-Pipeline
 Create a virtual environment
 
 ```bash
-python3 -m venv venv
+python -m venv venv
 ```
 
 Activate it
 
-Mac/Linux
+### macOS / Linux
 
 ```bash
 source venv/bin/activate
 ```
 
-Windows
+### Windows
 
 ```bash
 venv\Scripts\activate
@@ -108,13 +113,15 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Run the application
+---
+
+# ▶️ Run the Application
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-Open
+Open your browser
 
 ```
 http://127.0.0.1:8000
@@ -122,21 +129,61 @@ http://127.0.0.1:8000
 
 ---
 
-## 🧠 Model Used
+# 🧠 How It Works
 
-- TensorFlow MobileNetV2
-- ImageNet pretrained weights
+1. User uploads an image.
+2. FastAPI receives the image.
+3. TensorFlow preprocesses it.
+4. MobileNetV2 predicts ImageNet classes.
+5. The Top 5 predictions are displayed with confidence percentages.
+6. The uploaded image is shown alongside the prediction results.
 
 ---
 
-## 🎯 Future Improvements
+# 📌 Example Prediction
 
-- Drag & Drop Upload
-- Docker Support
-- AWS EC2 Deployment
-- S3 Image Storage
-- User Authentication
-- History of Predictions
+| Rank | Prediction | Confidence |
+|------|------------|-----------:|
+| 1 | Golden Retriever | 94.33% |
+| 2 | Irish Setter | 0.45% |
+| 3 | Norfolk Terrier | 0.43% |
+| 4 | Sussex Spaniel | 0.37% |
+| 5 | Brittany Spaniel | 0.35% |
+
+---
+
+# 🌟 Future Improvements
+
+- Docker support
+- AWS EC2 deployment
+- Amazon S3 image storage
+- User authentication
+- Image history
+- REST API documentation
+- Multiple AI models
+- Batch image predictions
+- Kubernetes deployment
+
+---
+
+# 🎯 Learning Objectives
+
+This project helped me learn:
+
+- FastAPI fundamentals
+- Backend API development
+- TensorFlow model integration
+- Image preprocessing
+- Jinja2 templating
+- File uploads
+- Project organization
+- Git & GitHub workflow
+
+---
+
+# 📜 License
+
+This project is open source and available under the MIT License.
 
 ---
 
@@ -144,6 +191,8 @@ http://127.0.0.1:8000
 
 **Roshan R**
 
-GitHub:
+GitHub: https://github.com/RoshanR-tech
 
-https://github.com/RoshanR-tech
+---
+
+⭐ If you found this project helpful, consider giving it a star!
