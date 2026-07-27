@@ -1,0 +1,21 @@
+# VS Code
+.vscode/
+
+# Virtual Environment
+venv/
+**/venv/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Uploaded images
+uploads/
+**/uploads/*
+
+# Keep empty upload folders
+!.gitkeep
